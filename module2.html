@@ -210,6 +210,26 @@
             font-weight: bold;
         }
 
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 20px 0;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -281,6 +301,12 @@
                 <h2>How Naltrexone Changes the Equation</h2>
                 
                 <p>This is where Naltrexone, the medication used in the Sinclair Method, comes into play. Naltrexone is an <strong>opioid antagonist</strong>. Think of it as a key that fits into the same lock (the opioid receptor) as endorphins, but it doesn't turn the lock. Instead, it simply occupies the space, preventing your endorphins from binding there.</p>
+
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AQOINKXa2rU" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </div>
 
                 <div class="science-diagram">
                     <h3>How Naltrexone Works</h3>
