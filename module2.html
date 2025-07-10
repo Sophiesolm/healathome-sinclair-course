@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2: The Science of TSM Explained Simply | Heal@Home Course</title>
+    <meta name="description" content="Understand the neuroscience behind the Sinclair Method and how it retrains your brain.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f8fffe;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2a6d66 0%, #5d9693 100%);
+            color: white;
+            padding: 1.5rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-bar {
+            background: rgba(255,255,255,0.2);
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 1rem;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: #e67e22;
+            height: 100%;
+            width: 66.66%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .module-nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            background: #2a6d66;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: #1a4d47;
+        }
+
+        .content-area {
+            background: white;
+            padding: 3rem 0;
+            min-height: 60vh;
+        }
+
+        .module-content h1 {
+            color: #2a6d66;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .module-content h2 {
+            color: #2a6d66;
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 0.5rem;
+        }
+
+        .module-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f8fffe 0%, #e8f5f3 100%);
+            border-left: 4px solid #e67e22;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box h3 {
+            color: #2a6d66;
+            margin-bottom: 1rem;
+        }
+
+        .science-diagram {
+            background: #f8fffe;
+            border: 2px solid #2a6d66;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .diagram-step {
+            display: inline-block;
+            background: white;
+            padding: 1rem;
+            margin: 0.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-width: 150px;
+        }
+
+        .diagram-arrow {
+            color: #e67e22;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+        }
+
+        .key-takeaway {
+            background: #2a6d66;
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .key-takeaway h3 {
+            color: #e67e22;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .module-footer {
+            background: #f8fffe;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .complete-button {
+            display: inline-block;
+            background: #e67e22;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .complete-button:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        .numbered-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .numbered-list li {
+            counter-increment: step-counter;
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+            position: relative;
+        }
+
+        .numbered-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #e67e22;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .module-content h1 {
+                font-size: 1.8rem;
+            }
+            
+            .diagram-step {
+                display: block;
+                margin: 1rem 0;
+            }
+            
+            .diagram-arrow {
+                display: block;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <h1>Module 2: The Science of TSM Explained Simply</h1>
+                    <p>Module 2 of 3 • Estimated reading time: 8-10 minutes</p>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="module-nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="module1.html" class="nav-button">← Previous Module</a>
+                <span>Module 2 of 3</span>
+                <a href="#" class="nav-button" id="nextButton" style="background: #ccc; cursor: not-allowed;">Next Module →</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="content-area">
+        <div class="container">
+            <div class="module-content">
+                <p>In Module 1, we introduced the Sinclair Method (TSM) as a unique approach to alcohol addiction treatment. Now, let's delve into the fascinating science behind why it works. Understanding this process can empower you and provide confidence in your recovery journey.</p>
+
+                <h2>Alcohol and Your Brain: A Cycle of Reward</h2>
+                
+                <p>When you consume alcohol, it triggers a powerful response in your brain. Specifically, alcohol stimulates the release of natural chemicals called <strong>endorphins</strong>. Endorphins are your body's own "feel-good" chemicals, and they play a crucial role in the brain's reward system.</p>
+
+                <p>These endorphins bind to specific sites in your brain known as <strong>opioid receptors</strong>. When endorphins connect with these receptors, they produce feelings of pleasure, relaxation, and euphoria. This pleasurable sensation reinforces the behavior that led to it – in this case, drinking alcohol. Over time, your brain learns to associate alcohol with this rewarding feeling, creating a strong neural pathway.</p>
+
+                <div class="highlight-box">
+                    <h3>How Addiction Develops</h3>
+                    <p>This is how alcohol addiction, a form of learned behavior, develops: your brain is conditioned to seek out the substance that provides this powerful reward. The more this cycle repeats, the stronger the neural pathways become.</p>
+                </div>
+
+                <h2>How Naltrexone Changes the Equation</h2>
+                
+                <p>This is where Naltrexone, the medication used in the Sinclair Method, comes into play. Naltrexone is an <strong>opioid antagonist</strong>. Think of it as a key that fits into the same lock (the opioid receptor) as endorphins, but it doesn't turn the lock. Instead, it simply occupies the space, preventing your endorphins from binding there.</p>
+
+                <div class="science-diagram">
+                    <h3>How Naltrexone Works</h3>
+                    <div class="diagram-step">
+                        <strong>1. Take Naltrexone</strong><br>
+                        Blocks opioid receptors
+                    </div>
+                    <span class="diagram-arrow">→</span>
+                    <div class="diagram-step">
+                        <strong>2. Drink Alcohol</strong><br>
+                        Endorphins released
+                    </div>
+                    <span class="diagram-arrow">→</span>
+                    <div class="diagram-step">
+                        <strong>3. No Reward</strong><br>
+                        Endorphins can't bind
+                    </div>
+                </div>
+
+                <p>When you take Naltrexone one hour before drinking:</p>
+
+                <ol class="numbered-list">
+                    <li>You still consume alcohol, and your body still releases endorphins.</li>
+                    <li>However, because Naltrexone is blocking the opioid receptors, your endorphins cannot bind to them.</li>
+                    <li>As a result, you don't experience the same intense pleasurable reward from drinking.</li>
+                </ol>
+
+                <p>Over time, by consistently taking Naltrexone before drinking, your brain gradually "unlearns" the strong association between alcohol and pleasure. The reward pathway weakens, and alcohol becomes less and less compelling.</p>
+
+                <h2>The Power of Pharmacological Extinction</h2>
+                
+                <p>This process of "unlearning" the alcohol-reward association is called <strong>pharmacological extinction</strong>. It's a scientific term for a very natural process.</p>
+
+                <div class="highlight-box">
+                    <h3>Pavlov's Dogs Analogy</h3>
+                    <p>Imagine Pavlov's famous experiment with dogs: he rang a bell before feeding them, and eventually, the dogs began to salivate at the sound of the bell alone. If he then continued to ring the bell but stopped providing food, the dogs would eventually stop salivating to the bell. Their brain "unlearned" the association.</p>
+                </div>
+
+                <p>Similarly, with TSM, your brain gradually stops craving alcohol when it no longer delivers the expected reward. It's not about making alcohol taste bad or causing unpleasant side effects; it's about neutralizing the powerful, addictive pull that alcohol once had. This is a gradual process, not an overnight change, and it requires consistency.</p>
+
+                <div class="key-takeaway">
+                    <h3>Key Takeaway for Module 2</h3>
+                    <p>TSM works by scientifically retraining your brain to reduce its desire for alcohol. By blocking the pleasurable effects of alcohol with Naltrexone, your brain gradually "unlearns" the addiction, making alcohol a less compelling substance over time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="module-footer">
+        <div class="container">
+            <a href="module3.html" class="complete-button" id="completeButton">Complete Module 2 & Continue</a>
+            <p>Next: Module 3 - TSM in Practice with Heal@Home</p>
+        </div>
+    </footer>
+
+    <script>
+        // Enable next button and mark module as completed
+        document.getElementById('completeButton').addEventListener('click', function() {
+            localStorage.setItem('module2_completed', 'true');
+            document.getElementById('nextButton').style.background = '#2a6d66';
+            document.getElementById('nextButton').style.cursor = 'pointer';
+            document.getElementById('nextButton').href = 'module3.html';
+        });
+
+        // Check if previous modules are completed
+        if (localStorage.getItem('module1_completed')) {
+            // Module 1 completed, show this module
+        }
+    </script>
+</body>
+</html>
+

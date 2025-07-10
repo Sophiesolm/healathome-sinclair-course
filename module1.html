@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction to the Sinclair Method | Heal@Home Course</title>
+    <meta name="description" content="Learn what the Sinclair Method is and how it differs from traditional alcohol addiction treatments.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f8fffe;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2a6d66 0%, #5d9693 100%);
+            color: white;
+            padding: 1.5rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-bar {
+            background: rgba(255,255,255,0.2);
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 1rem;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: #e67e22;
+            height: 100%;
+            width: 33.33%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .module-nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            background: #2a6d66;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: #1a4d47;
+        }
+
+        .nav-button.disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .content-area {
+            background: white;
+            padding: 3rem 0;
+            min-height: 60vh;
+        }
+
+        .module-content h1 {
+            color: #2a6d66;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .module-content h2 {
+            color: #2a6d66;
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 0.5rem;
+        }
+
+        .module-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f8fffe 0%, #e8f5f3 100%);
+            border-left: 4px solid #e67e22;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box h3 {
+            color: #2a6d66;
+            margin-bottom: 1rem;
+        }
+
+        .key-takeaway {
+            background: #2a6d66;
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .key-takeaway h3 {
+            color: #e67e22;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .module-footer {
+            background: #f8fffe;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .complete-button {
+            display: inline-block;
+            background: #e67e22;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .complete-button:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .module-content h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <h1>Module 1: Introduction to the Sinclair Method</h1>
+                    <p>Module 1 of 3 • Estimated reading time: 8-10 minutes</p>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="module-nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-button">← Course Home</a>
+                <span>Module 1 of 3</span>
+                <a href="#" class="nav-button disabled">Next Module →</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="content-area">
+        <div class="container">
+            <div class="module-content">
+                <p>Welcome to "Understanding the Sinclair Method with Heal@Home." In this short course, we'll introduce you to a revolutionary approach to alcohol addiction treatment that has helped thousands regain control of their lives.</p>
+
+                <h2>What is the Sinclair Method (TSM)?</h2>
+                
+                <p>The Sinclair Method (TSM) is an evidence-based treatment for alcohol use disorder that uses a medication called Naltrexone. Unlike traditional abstinence-only approaches, TSM doesn't require you to stop drinking immediately. Instead, it focuses on gradually reducing your cravings and consumption over time.</p>
+
+                <div class="highlight-box">
+                    <h3>The Core Principle</h3>
+                    <p>You take Naltrexone one hour before your first drink of the day, every day you plan to drink. This simple act initiates a process called "pharmacological extinction," which we'll explain in more detail in the next module.</p>
+                </div>
+
+                <h2>Why TSM is Different</h2>
+                
+                <p>Many people are familiar with treatment models that emphasize complete abstinence from alcohol, often through programs like Alcoholics Anonymous or inpatient rehabilitation. While these approaches are effective for some, they don't work for everyone, and the pressure to be immediately sober can be daunting.</p>
+
+                <p>TSM offers a different path. It acknowledges that for many, alcohol addiction is a learned behavior, deeply rooted in the brain's reward system. By taking Naltrexone before drinking, you gradually "unlearn" the pleasurable association with alcohol. This means you can continue to drink, but over time, your desire for alcohol diminishes naturally and safely.</p>
+
+                <div class="highlight-box">
+                    <h3>A Flexible Approach</h3>
+                    <p>TSM recognizes that recovery isn't one-size-fits-all. It provides a scientifically-backed method that works with your current lifestyle while gradually reducing alcohol's hold on your life.</p>
+                </div>
+
+                <h2>Heal@Home: Your Partner in the TSM Journey</h2>
+                
+                <p>At Heal@Home, we are committed to providing discreet, evidence-based, and personalized treatment for alcohol addiction. We believe in empowering you to take control of your recovery journey. Our program integrates the Sinclair Method with expert medical guidance, therapeutic support, and convenient digital tools, all from the comfort and privacy of your home.</p>
+
+                <p>We understand that seeking help for alcohol addiction can be a sensitive topic. That's why we prioritize your privacy and offer a flexible approach that fits into your life, rather than requiring you to disrupt it.</p>
+
+                <div class="key-takeaway">
+                    <h3>Key Takeaway for Module 1</h3>
+                    <p>The Sinclair Method offers a flexible, science-backed path to regaining control over alcohol, distinct from traditional methods. Heal@Home is your trusted partner, guiding you through this journey with personalized care and support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="module-footer">
+        <div class="container">
+            <a href="module2.html" class="complete-button">Complete Module 1 & Continue</a>
+            <p>Next: Module 2 - The Science of TSM Explained Simply</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mark module as completed and enable next button
+        document.querySelector('.complete-button').addEventListener('click', function() {
+            localStorage.setItem('module1_completed', 'true');
+        });
+    </script>
+</body>
+</html>
+
